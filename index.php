@@ -10,7 +10,10 @@
 <body>
     <div class="theCenter">
         <img src="../img/me.jpeg" alt="" class="avatar">
-        <h1 class="topText">Jasper Rijsbaarman</h1>
+        <h1>Jasper Rijsbaarman</h1>
+        <div class="divider"></div>
+        <h1><a href="../aboutMe.php">About me</a></h1>
+        <h1><a href="">My work</a></h1>
     </div>
 </body>
 </html>
