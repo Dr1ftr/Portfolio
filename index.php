@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>JR Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="index open" id="index">
+    <div class="cntrContainer open" id="index">
         <img src="../img/me.jpeg" alt="" class="avatar">
         <h1>Jasper Rijsbaarman</h1>
         <div class="divider"></div>
-        <h1><a href="../aboutMe.php">About me</a></h1>
-        <h1><a href="">My work</a></h1>
-        <button onclick="switchView(index)">Test</button>
+        <h1><button onclick="switchView(index, aboutMe)" class="switchButton">About me</button></h1>
+        <h1><button onclick="switchView(index, myWork)" class="switchButton">My work</button></h1>
     </div>
+    
+    <div class="cntrContainer hidden" id="aboutMe">
+        <h1><button onclick="switchView(aboutMe, index)" class="switchButton"><- Home</button></h1>
+        <div class="row">
+            <h3 class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate, dolorem perspiciatis distinctio quas maiores ullam recusandae fugit autem ipsam alias eveniet, aliquid assumenda obcaecati neque, beatae porro asperiores provident!</h3>
+            <img src="../img/me.jpeg" class="avatar" alt="">
+        </div>
+    </div>
+    <div class="hidden" id="myWork"></div>
 </body>
 </html>
 
@@ -26,11 +34,9 @@
         setTimeout(function(params) {
             divId.classList.add('hidden')
             divId.classList.remove('hide')
-        }, 3000);
-    }
-    function show(divId) {
-        divId.classList.remove('hide')
 
-        divId.classList.add('open')
+            targetDivId.classList.remove('hidden')
+            targetDivId.classList.add('open')
+        }, 1600);
     }
 </script>

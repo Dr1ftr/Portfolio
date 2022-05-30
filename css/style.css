@@ -24,7 +24,7 @@ body{
     background-size: 100% 100%;
 }
 
-.index{
+.cntrContainer{
     margin-top: 7rem;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@ body{
     backdrop-filter: blur(8px);
     border-radius: 5%;
     padding: 1rem;
+
 }
 
 h1{
@@ -49,14 +50,14 @@ h1{
     justify-content: center;
 }
 
-a{
+.switchButton{
     margin: 0;
     color: black;
     text-decoration: none;
     transition: color 1s;
 }
 
-a:hover{
+.switchButton:hover{
     color: white;
 }
 
@@ -74,7 +75,7 @@ a:hover{
 }
 
 .hide{
-    animation: fadeOut ease 2s;
+    animation: fadeOut ease 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -83,6 +84,28 @@ a:hover{
 }
 
 .open{
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 1.5s;
     animation-fill-mode: forwards;
 }
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+}
+
+.summary{
+    width: 25%;
+}
+
