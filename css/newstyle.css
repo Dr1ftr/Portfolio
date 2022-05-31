@@ -51,7 +51,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to right, transparent 0%, rgb(0, 76, 255) 20%, rgb(0, 76, 255) 80%, transparent 100%);
   font-family: sortefax;
-  color: black;
+  color: rgb(52, 196, 225);
   width: 22rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -61,7 +61,7 @@ h1 {
 
 .switchButton {
   margin: 0;
-  color: black;
+  color: rgb(52, 196, 225);
   text-decoration: none;
   -webkit-transition: color 1s ease;
   -moz-transition: color 1s ease;
