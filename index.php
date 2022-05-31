@@ -19,32 +19,40 @@
     <div class="cntrContainer hidden" id="aboutMe">
         <h1><button onclick="switchView(aboutMe, index)" class="switchButton"><- Home</button></h1>
         <div class="row">
-            <h3 class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate, dolorem perspiciatis distinctio quas maiores ullam recusandae fugit autem ipsam alias eveniet, aliquid assumenda obcaecati neque, beatae porro asperiores provident!</h3>
+            <div class="column contentMid">
+                <h3 class="summary" id="myName">Jasper Rijsbaarman</h3>
+                <p>Student software development</p>
+                <p>Date of birth: 09/06/2004</p>
+                <p>Celphone: 06 30338583</p>
+                <p>Emailadress: jasperrijsb@gmail.com</p>
+            </div>
             <img src="../img/me.jpeg" class="avatar" alt="">
         </div>
+        <div class="divider"></div>
+        <p>I am a motivated, enthusiastic realist. I will be the first to acknowledge a mistake, this goes for both myself and others. 
+            I will also be the first one to help you to the best of my ability, and will be very curious if I can't fix the mistake myself.</p>
+        <p></p>
     </div>
 
     <div class="cntrContainer myWorkWidth hidden" id="myWork">
         <h1><button onclick="switchView(myWork, index)" class="switchButton"><- Home</button></h1>
         <div class="row">
-            <div class="workCard">
+            <div class="workCard" onclick="myhref('https://github.com/Dr1ftr/GuessMyNumber')">
                 <div class="workCardContent">
                     <img src="../img/guessMyNumber.png" alt="">
                 </div>
                 <div class="overlay">
                     <p>Guess my number</p>
                     <p>- Javascript</p>
-                    <a href="https://github.com/Dr1ftr/GuessMyNumber">-> Github <-</a>
                 </div>
             </div>
-            <div class="workCard">
+            <div class="workCard" onclick="myhref('https://github.com/Dr1ftr/newsApp')">
                 <div class="workCardContent">
                     <img src="../img/newsApp.png" alt="">
                 </div>
                 <div class="overlay">
                     <p>News App</p>
                     <p>- Flutter(Dart)</p>
-                    <a href="https://github.com/Dr1ftr/newsApp">-> Github <-</a>
                 </div>
             </div>
         </div>
@@ -64,4 +72,7 @@
             targetDivId.classList.add('open')
         }, 1100);
     }
+
+    function myhref(web){
+    window.location.href = web;}
 </script>
