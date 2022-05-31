@@ -26,11 +26,27 @@
 
     <div class="cntrContainer myWorkWidth hidden" id="myWork">
         <h1><button onclick="switchView(myWork, index)" class="switchButton"><- Home</button></h1>
-        <div class="workCard">
-            <div class="workCardContent">
-                <img src="../img/guessMyNumber.png" alt="">
+        <div class="row">
+            <div class="workCard">
+                <div class="workCardContent">
+                    <img src="../img/guessMyNumber.png" alt="">
+                </div>
+                <div class="overlay">
+                    <p>Guess my number</p>
+                    <p>- Javascript</p>
+                    <a href="https://github.com/Dr1ftr/GuessMyNumber">-> Github <-</a>
+                </div>
             </div>
-            <a href="https://github.com/Dr1ftr/GuessMyNumber">Guess my number</a>
+            <div class="workCard">
+                <div class="workCardContent">
+                    <img src="../img/newsApp.png" alt="">
+                </div>
+                <div class="overlay">
+                    <p>News App</p>
+                    <p>- Flutter(Dart)</p>
+                    <a href="https://github.com/Dr1ftr/newsApp">-> Github <-</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
