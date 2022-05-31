@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Portfolio</title>
-    <link rel="stylesheet" href="../css/oldstyling.css">
+    <link rel="stylesheet" href="../css/newstyle.css">
 </head>
 <body>
     <div class="cntrContainer open" id="index">
@@ -24,8 +24,14 @@
         </div>
     </div>
 
-    <div class="cntrContainer hidden" id="myWork">
-        <div class="workCard"></div>
+    <div class="cntrContainer myWorkWidth hidden" id="myWork">
+        <h1><button onclick="switchView(myWork, index)" class="switchButton"><- Home</button></h1>
+        <div class="workCard">
+            <div class="workCardContent">
+                <img src="../img/guessMyNumber.png" alt="">
+            </div>
+            <a href="https://github.com/Dr1ftr/GuessMyNumber">Guess my number</a>
+        </div>
     </div>
 </body>
 </html>
