@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/oldstyling.css">
 </head>
 <body>
     <div class="cntrContainer open" id="index">
@@ -23,7 +23,10 @@
             <img src="../img/me.jpeg" class="avatar" alt="">
         </div>
     </div>
-    <div class="hidden" id="myWork"></div>
+
+    <div class="cntrContainer hidden" id="myWork">
+        <div class="workCard"></div>
+    </div>
 </body>
 </html>
 
@@ -31,12 +34,12 @@
     function switchView(divId, targetDivId) {
         divId.classList.remove('open')
         divId.classList.add('hide')
-        setTimeout(function(params) {
+        setTimeout(function() {
             divId.classList.add('hidden')
             divId.classList.remove('hide')
 
             targetDivId.classList.remove('hidden')
             targetDivId.classList.add('open')
-        }, 1600);
+        }, 1100);
     }
 </script>
